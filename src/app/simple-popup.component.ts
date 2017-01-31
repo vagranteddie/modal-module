@@ -1,6 +1,6 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {ActiveModalDialog} from "../../modal/modal-ref";
-import {BaseModalComponent} from "../../modal/base-modal.component";
+import {Component, OnInit, Input} from "@angular/core";
+import {ActiveModalDialog} from "../modal/modal-ref";
+import {BaseModalComponent} from "../modal/base-modal.component";
 
 @Component({
   selector: 'app-simple-popup',
@@ -16,9 +16,9 @@ import {BaseModalComponent} from "../../modal/base-modal.component";
 })
 export class SimplePopupComponent extends BaseModalComponent implements OnInit {
 
-  @Input() someText:string;
+  @Input() someText: string;
 
-  constructor(private activeModal:ActiveModalDialog) {
+  constructor(private activeModal: ActiveModalDialog) {
     super();
   }
 

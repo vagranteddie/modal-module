@@ -2,7 +2,6 @@ import {Injectable, ComponentFactoryResolver, Injector} from "@angular/core";
 import {ModalDialogStack} from "./modal-stack";
 import {ModalDialogRef} from "./modal-ref";
 export interface ModalDialogOptions {
-    fullScreen?: boolean;
     header?: string;
     draggable?: boolean;
     modal?: boolean;
@@ -12,7 +11,6 @@ export interface ModalDialogOptions {
     closable?: boolean;
     responsive?: boolean;
     dismissableMask?: boolean;
-    size?: 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
     width?: number;
     height?: number;
 }

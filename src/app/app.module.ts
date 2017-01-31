@@ -1,12 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppRoutingModule } from './app-routing.module';
-
-import { AppComponent } from './app.component';
+import {BrowserModule} from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {AppRoutingModule} from "./app-routing.module";
+import {AppComponent} from "./app.component";
 import {ModalModule} from "../modal/modal.module";
-import { SimplePopupComponent } from './simple-popup/simple-popup.component';
+import {SimplePopupComponent} from "./simple-popup.component";
 import {ButtonModule} from "primeng/components/button/button";
 
 @NgModule({
@@ -26,4 +25,5 @@ import {ButtonModule} from "primeng/components/button/button";
   bootstrap: [AppComponent],
   entryComponents: [SimplePopupComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
