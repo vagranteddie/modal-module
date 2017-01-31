@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
+import {Modal} from "../modal/modal";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  constructor(private modal: Modal) {
+  }
 }
